@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Peter Lundy | Web Mapping Portfolio</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --text: #1f2933;
+      --muted: #52606d;
+      --primary: #1f3c88;
+      --primary-dark: #14295f;
+      --card: #ffffff;
+      --border: #d9e2ec;
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      color: white;
+      padding: 70px 20px 60px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      margin: 0 auto;
+      max-width: 700px;
+      font-size: 1.05rem;
+    }
+
+    nav {
+      background: #102a43;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    nav .nav-wrap {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      padding: 14px 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: var(--primary);
+    }
+
+    .card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .section-title {
+      margin: 40px 0 18px;
+      font-size: 1.7rem;
+      color: var(--primary);
+    }
+
+    .project-list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .project-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 6px solid var(--primary);
+      border-radius: 12px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .project-item h4 {
+      margin: 0 0 8px;
+    }
+
+    .project-item p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px 20px;
+      background: #dfe7ef;
+      color: #243b53;
+      border-top: 1px solid #cbd2d9;
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav .nav-wrap {
+        gap: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Peter Lundy</h1>
+    <p>
+      Web Mapping and GIS portfolio site for interactive mapping projects created with
+      Leaflet, ArcGIS JavaScript, and spatial data visualization tools.
+    </p>
+  </header>
+
+  <nav>
+    <div class="nav-wrap">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#future">Future Work</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="about" class="intro">
+      <h2 class="section-title" style="margin-top: 0;">About This Site</h2>
+      <p>
+        This website serves as a foundation for my Web Mapping and GIS coursework at Temple University.
+        It will be expanded over time to include interactive maps, class assignments, and final project work
+        related to Leaflet, ArcGIS JavaScript, and environmental GIS.
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2 class="section-title">Focus Areas</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Interactive Web Maps</h3>
+          <p>
+            Building browser-based maps that allow users to explore geographic data through popups,
+            layers, legends, and other interactive controls.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Leaflet and ArcGIS JS</h3>
+          <p>
+            Using modern JavaScript mapping libraries to create choropleth maps, proportional symbol maps,
+            and service-based web mapping projects.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Environmental GIS</h3>
+          <p>
+            Applying GIS and mapping tools to environmental issues, spatial analysis, and future coursework
+            related to sustainability and policy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Project Template</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h4>Choropleth Mapping</h4>
+          <p>
+            A place for Leaflet and ArcGIS choropleth maps that explore patterns in population,
+            environment, or regional data.
+          </p>
+        </div>
+        <div class="project-item">
+          <h4>Proportional Symbol Mapping</h4>
+          <p>
+            A section for symbol-based maps that visualize magnitude and comparison using size and scale.
+          </p>
+        </div>
+        <div class="project-item">
+          <h4>Final Course Project</h4>
+          <p>
+            This section will later feature a more polished interactive project built from original ideas
+            and customized design choices.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="future">
+      <h2 class="section-title">Future Development</h2>
+      <div class="card">
+        <p>
+          This template is intended to grow into a full portfolio site that showcases my work in GIS,
+          cartography, environmental studies, and web-based spatial visualization.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Created for ENST 4064 - Web Mapping and GIS
+  </footer>
+</body>
+</html>
